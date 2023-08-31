@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Landing Page -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DSA - JS</title>
+		<link rel="stylesheet" href="../style.css" />
+
+		<!-- Bootstrap Styles Plugin -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous" />
+	</head>
+
+	<body class="">
+		<!-- Navbar - Bootsrap -->
+		<nav
+			class="navbar navbar-expand-sm sticky-top border-bottom border-light-subtle">
+			<div class="container-fluid px-0 mx-2">
+				<a
+					href="https://crio-4me.jagadeeshwar.net"
+					class="navbar-brand h1"
+					style="margin-left: 1rem"
+					>Crio.Do 4 Me</a
+				>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#togglerTargetNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse justify-content-sm-center"
+					id="togglerTargetNavbar"
+					style="margin-left: 1rem">
+					<ul class="navbar-nav">
+						<li class="navbar-item"><a href="#" class="nav-link">Home</a></li>
+						<li class="navbar-item">
+							<a href="" class="nav-link">Explore</a>
+						</li>
+						<li class="navbar-item">
+							<a href="https://profile.jagadeeshwar.net" class="nav-link"
+								>View Profile</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="content h-100">
+				<div>
+					<h5
+						class="btn btn-success"
+						data-bs-toggle="collapse"
+						role="button"
+						href="#collapseTarget1">
+						What is Time Complexity ?
+					</h5>
+					<div class="collapse" id="collapseTarget1">
+						<div class="card card-body">
+							<ul>
+								<li>To <strong>compare</strong> Algoriths/DS Solutions.</li>
+								<ul>
+									<li>Which Algorithm is faster ?</li>
+								</ul>
+
+								<li>
+									Time taken for a function to complete its task depends on
+									various factors
+								</li>
+
+								<li>
+									How to measure the <strong>Speed of a Function</strong> ?
+								</li>
+								<ul>
+									<li>Time Taken (in sec.)</li>
+									<ul>
+										<li>
+											But that would change depending on the
+											<strong>input data set size.</strong>
+										</li>
+										<li>
+											Also on the <strong>machine</strong> which it's being
+											executed.
+										</li>
+									</ul>
+									<li>Number of statements executed.</li>
+									<ul>
+										<li>
+											This would depend on the programming language & coding
+											style
+										</li>
+									</ul>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<h5
+						class="btn btn-success"
+						data-bs-toggle="collapse"
+						role="button"
+						href="#collapseTarget2">
+						Why we need Time Complexity ?
+					</h5>
+					<div class="collapse" id="collapseTarget2">
+						<div class="card card-body">
+							<ul>
+								<li>To make it Independent of the mentioned dependencies.</li>
+								<li>
+									To understand the Time taken only based on
+									<strong>Input Size</strong>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<h5
+						class="btn btn-success"
+						data-bs-toggle="collapse"
+						role="button"
+						href="#collapseTarget3">
+						Big O Noation
+					</h5>
+					<div class="collapse" id="collapseTarget3">
+						<div class="card card-body">
+							<ul>
+								<li>
+									This is a way to measure how well our Algorithm scales as the
+									amount of data increases
+								</li>
+
+								<li>
+									<strong>Ex 1.:</strong> Input set of 10 elements compared to
+									input set of million elements
+								</li>
+
+								<li>
+									<strong>Ex 2.:</strong> Which element has the biggest effect
+									on the answer:
+									<strong>Q : 2*n^3 + 5*n^2 + 19</strong>
+									<ul>
+										<li>when n = 2, the answer is 2*8 + 5*4 + 19 = 55</li>
+										<li>when n = 3, the answer is 2*27 + 5*9 + 19 = 118</li>
+										<li>
+											when n = 10, the answer is 2*1000 + 5*100 + 19 = 2519
+										</li>
+
+										<ul>
+											<li>
+												As we can see, element - 19 is insignificant as n
+												increases
+											</li>
+
+											<li>
+												In fact, n^2 is alse dwarfed by n^3 as n increases
+											</li>
+
+											<li>
+												<strong>n^3</strong> is the main contributor (even the
+												constant, 2, doesn't contribute much)
+											</li>
+
+											<li>
+												<strong
+													>Hence, the Complexity of this question is
+													O(n^3)</strong
+												>
+											</li>
+										</ul>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="fixed-bottom bg-info-subtle">
+			<div>© QTrip 2020</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
